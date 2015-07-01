@@ -45,7 +45,7 @@ def get_ini_path():
         ini_path = os.path.join(directory, FILE_NAME)
         if not os.access(directory, os.W_OK):
             exit_with_err(
-                "Lost permissions walkign up to {}. Unable to find {}".format(directory, FILE_NAME))
+                "Lost permissions walking up to {}. Unable to find {}".format(directory, FILE_NAME))
         if os.path.isfile(ini_path):
             INI_PATH = ini_path
             return ini_path
